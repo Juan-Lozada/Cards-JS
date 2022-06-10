@@ -6,11 +6,10 @@ let precio = document.querySelector ("#precio").innerText
 
 let total = Number(cantidad) * Number(precio)
 
-document.querySelector("#precio-final").innerText = "$" + total
+document.querySelector("#precio-final").innerText = "$" + total.toLocaleString('en-US')
 document.querySelector("#cantidad-final").innerText = cantidad + " unidades"
-
-
 
 let color = document.querySelector("#colorSelection option:checked").value;
     document.querySelector("#color-final").style.background = color;
 })
+
